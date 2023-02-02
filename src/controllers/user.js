@@ -1,8 +1,8 @@
-const { userService } = require('../services');
+import services from '../services/index.js';
 const addUser = (req, res) => {
   try {
     const { body } = req;
-    const users = userService.addUser(body);
+    const users = services.userService.addUser(body);
     res.status(201).json({
       data: users,
     });
@@ -13,4 +13,4 @@ const addUser = (req, res) => {
   }
 };
 
-module.exports = { addUser };
+export default { addUser };

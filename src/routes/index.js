@@ -1,3 +1,3 @@
-const userRoute = require('./user');
+import userRoute from './user.js';
 
-module.exports = { userRoute };
+export default { userRoute };

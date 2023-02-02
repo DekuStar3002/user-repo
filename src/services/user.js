@@ -1,4 +1,4 @@
-const database = require('../database');
+import database from '../database.js';
 
 const addUser = (body) => {
   const newUser = {
@@ -10,4 +10,4 @@ const addUser = (body) => {
   return database.users;
 };
 
-module.exports = { addUser };
+export default { addUser };
